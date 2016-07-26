@@ -27,6 +27,7 @@
 #import "LCNetworkAgent.h"
 #import "LCNetworkConfig.h"
 #import "TMCache.h"
+#import "NSTimer+HYBHelperKit.h"
 
 @interface LCBaseRequest ()
 
@@ -52,7 +53,8 @@
         }
         _config = [LCNetworkConfig sharedInstance];
         _agent = [[LCNetworkAgent alloc] init];
-      
+        
+        self.cacheInvalidTime = 0;//默认不开启缓存
     }
     return self;
 }
@@ -61,6 +63,14 @@
 - (void)start{
     [self toggleAccessoriesWillStartCallBack];
     [self.agent addRequest:self];
+    //
+    [NSTimer hyb_scheduledTimerWithTimeInterval:1.0 repeats:YES callback:^(NSTimer *timer) {
+        self.cacheInvalidTime--;
+        if (self.cacheInvalidTime <= 0) {
+            [[TMCache sharedCache].diskCache removeObjectForKey:self.urlString];
+            [timer hyb_invalidate];
+        }
+    }];
 }
 
 - (void)startWithCompletionBlockWithSuccess:(LCRequestCompletionBlock)success
@@ -116,7 +126,7 @@
     NSString *baseUrl = nil;
     #pragma clang diagnostic push
     #pragma clang diagnostic ignored "-Wdeprecated-declarations"
-    if ( [self.child respondsToSelector:@selector(isViceUrl)] && [self.child isViceUrl]) {
+    if ([self.child respondsToSelector:@selector(isViceUrl)] && [self.child isViceUrl]) {
         baseUrl = self.config.viceBaseUrl;
     }
     #pragma clang diagnostic pop
@@ -128,7 +138,7 @@
         baseUrl = self.config.mainBaseUrl;
     }
     if (baseUrl) {
-        if ( [self.child respondsToSelector:@selector(useCustomApiMethodName)] && [self.child useCustomApiMethodName]) {
+        if ([self.child respondsToSelector:@selector(useCustomApiMethodName)] && [self.child useCustomApiMethodName]) {
             return [self.child apiMethodName];
         }
         NSString *urlString = [baseUrl stringByAppendingString:[self.child apiMethodName]];
@@ -139,6 +149,7 @@
     }
     return [self.child apiMethodName];
 }
+
 - (id)cacheJson{
     if (_cacheJson) {
         return _cacheJson;

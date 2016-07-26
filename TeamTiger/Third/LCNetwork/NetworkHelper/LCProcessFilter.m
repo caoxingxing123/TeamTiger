@@ -13,7 +13,7 @@
 }
 
 - (id)processResponseWithRequest:(id)response{
-    return response[@"city"];
+    return response[@"City"];
 }
 
 //- (id) processResponseWithRequest:(id)response{

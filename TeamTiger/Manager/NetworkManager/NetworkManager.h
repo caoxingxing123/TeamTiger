@@ -7,9 +7,27 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LCBaseRequest.h"
+#import "LCRequestAccessory.h"
 
 @interface NetworkManager : NSObject
 
++ (void)configerNetworking;
 
+@end
+
+@interface Api1 : LCBaseRequest<LCAPIRequest>
+
+@end
+
+@interface Api2 : LCBaseRequest<LCAPIRequest>
+
+@end
+
+@interface Api3 : LCBaseRequest<LCAPIRequest>
+
+@end
+
+@interface ImageUploadApi : LCBaseRequest<LCAPIRequest>
 
 @end

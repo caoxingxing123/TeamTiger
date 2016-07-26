@@ -211,6 +211,7 @@ typedef NS_ENUM(NSInteger , LCRequestSerializerType) {
  */
 @property (nonatomic, assign) BOOL invalidAccessory;
 @property (nonatomic, strong, readonly) id cacheJson;
+@property (nonatomic, assign) NSTimeInterval cacheInvalidTime;
 @property (nonatomic, strong, readonly) NSString *urlString;
 @property (nonatomic, strong, readonly) NSMutableArray *requestAccessories;
 @property (nonatomic, copy) void (^successCompletionBlock)(LCBaseRequest *);
