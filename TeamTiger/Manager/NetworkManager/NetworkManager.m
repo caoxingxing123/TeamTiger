@@ -53,38 +53,33 @@ static double const timeOutInterval = 15.0;
 
 @end
 
-@implementation Api2
-
-- (NSString *)apiMethodName {
-    return nil;
-}
-
-- (LCRequestMethod)requestMethod {
-    return LCRequestMethodGet;
-}
-
-@end
-
-@implementation Api3
-
-- (NSString *)apiMethodName {
-    return nil;
-}
-
-- (LCRequestMethod)requestMethod {
-    return LCRequestMethodGet;
-}
-
-@end
-
 @implementation ImageUploadApi
 
 - (NSString *)apiMethodName {
-    return nil;
+    return @"getweather2.aspx";
 }
 
 - (LCRequestMethod)requestMethod {
-    return LCRequestMethodGet;
+    return LCRequestMethodPost;
+}
+
+- (BOOL)ignoreUnifiedResponseProcess {
+    return YES;
+}
+
+- (BOOL)cacheResponse {
+    return NO;
+}
+
+- (AFConstructingBlock)constructingBodyBlock {
+    AFConstructingBlock block = ^(id<AFMultipartFormData> formData){
+        NSData *data = UIImageJPEGRepresentation([UIImage imageNamed:@"currentPageDot"], 0.9);
+        NSString *name = @"image";
+        NSString *formKey = @"image";
+        NSString *type = @"image/jpeg";
+        [formData appendPartWithFileData:data name:formKey fileName:name mimeType:type];
+    };
+    return block;
 }
 
 @end

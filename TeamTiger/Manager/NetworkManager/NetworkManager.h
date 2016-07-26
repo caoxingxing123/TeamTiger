@@ -20,14 +20,6 @@
 
 @end
 
-@interface Api2 : LCBaseRequest<LCAPIRequest>
-
-@end
-
-@interface Api3 : LCBaseRequest<LCAPIRequest>
-
-@end
-
 @interface ImageUploadApi : LCBaseRequest<LCAPIRequest>
 
 @end
