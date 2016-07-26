@@ -24,7 +24,7 @@
         _hud = [[MBProgressHUD alloc] initWithView:vc.view];
         [vc.view addSubview:_hud];
         _hud.mode = MBProgressHUDModeIndeterminate;
-        _hud.label.text = @"正在加载";
+        _hud.label.text = @"正在加载...";
         _hud.square = YES;
     }
     return self;
