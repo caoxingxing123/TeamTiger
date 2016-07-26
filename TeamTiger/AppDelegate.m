@@ -51,7 +51,7 @@
 
 #pragma -mark initial methods
 - (void)initialMethods {
-    
+    //DataBase
 }
 
 @end

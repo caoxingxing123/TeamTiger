@@ -373,8 +373,8 @@ hasKDbIdColumnInNewTable:(BOOL)hasKDbIdColumnInNewTable
         //T_APP_SETTINGS
         [self checkTable:database
                tableName:@"APP_SETTINGS"
-               allFields:@[@"current_app_version",@"current_iPhone_OS",@"current_iPhone_type",@"current_server_address",@"current_server_port",@"last_login_user_id",@"last_login_date",@"last_login_user_name",@"last_login_user_pwd",@"current_login_user_id",@"current_login_date",@"current_login_user_name",@"current_login_user_pwd"].mutableCopy
-           allFieldTypes:@[@"NVARCHAR",@"NVARCHAR",@"NVARCHAR",@"NVARCHAR",@"NVARCHAR",@"NVARCHAR",@"NVARCHAR",@"NVARCHAR",@"NVARCHAR",@"NVARCHAR",@"NVARCHAR",@"NVARCHAR",@"NVARCHAR"].mutableCopy
+           allFields:@[@"current_app_version",@"current_iPhone_OS",@"current_iPhone_type",@"current_server_address",@"current_server_port",@"last_login_user_id",@"last_login_date",@"last_login_user_name",@"last_login_user_pwd",@"current_login_user_id",@"current_login_date",@"current_login_user_name",@"current_login_user_pwd"].mutableCopy
+        allFieldTypes:@[@"NVARCHAR",@"NVARCHAR",@"NVARCHAR",@"NVARCHAR",@"NVARCHAR",@"NVARCHAR",@"NVARCHAR",@"NVARCHAR",@"NVARCHAR",@"NVARCHAR",@"NVARCHAR",@"NVARCHAR",@"NVARCHAR"].mutableCopy
              primaryKeys:nil
       isFieldTypeChanged:NO
          ];
