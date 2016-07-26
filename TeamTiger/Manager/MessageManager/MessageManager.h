@@ -10,4 +10,8 @@
 
 @interface MessageManager : NSObject
 
++ (instancetype)sharedInstance;
+
+- (void)handleOneMessage:(id)msgObj;
+
 @end
