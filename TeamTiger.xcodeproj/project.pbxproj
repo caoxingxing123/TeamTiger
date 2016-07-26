@@ -147,6 +147,16 @@
 		1D09CD611D3F59D500F85E9A /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D09CD4F1D3F59D500F85E9A /* SDWebImageDecoder.m */; };
 		1D09CD621D3F59D500F85E9A /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D09CD511D3F59D500F85E9A /* SDWebImageManager.m */; };
 		1D09CD631D3F59D500F85E9A /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D09CD531D3F59D500F85E9A /* SDWebImagePrefetcher.m */; };
+		1D0EA2C21D45A82C00B47108 /* LCBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0EA2B41D45A82C00B47108 /* LCBaseRequest.m */; };
+		1D0EA2C31D45A82C00B47108 /* LCBatchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0EA2B61D45A82C00B47108 /* LCBatchRequest.m */; };
+		1D0EA2C41D45A82C00B47108 /* LCBatchRequestAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0EA2B81D45A82C00B47108 /* LCBatchRequestAgent.m */; };
+		1D0EA2C51D45A82C00B47108 /* LCChainRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0EA2BA1D45A82C00B47108 /* LCChainRequest.m */; };
+		1D0EA2C61D45A82C00B47108 /* LCChainRequestAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0EA2BC1D45A82C00B47108 /* LCChainRequestAgent.m */; };
+		1D0EA2C71D45A82C00B47108 /* LCNetworkAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0EA2BF1D45A82C00B47108 /* LCNetworkAgent.m */; };
+		1D0EA2C81D45A82C00B47108 /* LCNetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0EA2C11D45A82C00B47108 /* LCNetworkConfig.m */; };
+		1D0EA2D11D45A8AE00B47108 /* TMCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0EA2CB1D45A8AE00B47108 /* TMCache.m */; };
+		1D0EA2D21D45A8AE00B47108 /* TMDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0EA2CE1D45A8AE00B47108 /* TMDiskCache.m */; };
+		1D0EA2D31D45A8AE00B47108 /* TMMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0EA2D01D45A8AE00B47108 /* TMMemoryCache.m */; };
 		1D9408651D41BA47009E2E11 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9408641D41BA47009E2E11 /* NetworkManager.m */; };
 		1D9408691D41BE2D009E2E11 /* MessageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9408681D41BE2D009E2E11 /* MessageManager.m */; };
 		1D9580361D3E123800FD0053 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D95802A1D3E123800FD0053 /* AFHTTPSessionManager.m */; };
@@ -200,6 +210,8 @@
 		1DA71B851D3DBA67007483D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA71B811D3DBA67007483D2 /* main.m */; };
 		1DA71B8F1D3DCC3D007483D2 /* TTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA71B8E1D3DCC3D007483D2 /* TTBaseViewController.m */; };
 		1DA71B921D3DCC9D007483D2 /* TTBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA71B911D3DCC9D007483D2 /* TTBaseNavigationController.m */; };
+		1DB926171D46F4F4003676AC /* LCProcessFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB926141D46F4F4003676AC /* LCProcessFilter.m */; };
+		1DB926181D46F4F4003676AC /* LCRequestAccessory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB926161D46F4F4003676AC /* LCRequestAccessory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -479,6 +491,29 @@
 		1D09CD511D3F59D500F85E9A /* SDWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageManager.m; sourceTree = "<group>"; };
 		1D09CD521D3F59D500F85E9A /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImagePrefetcher.h; sourceTree = "<group>"; };
 		1D09CD531D3F59D500F85E9A /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImagePrefetcher.m; sourceTree = "<group>"; };
+		1D0EA2B21D45A82C00B47108 /* LCBaseRequest+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LCBaseRequest+Internal.h"; sourceTree = "<group>"; };
+		1D0EA2B31D45A82C00B47108 /* LCBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCBaseRequest.h; sourceTree = "<group>"; };
+		1D0EA2B41D45A82C00B47108 /* LCBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCBaseRequest.m; sourceTree = "<group>"; };
+		1D0EA2B51D45A82C00B47108 /* LCBatchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCBatchRequest.h; sourceTree = "<group>"; };
+		1D0EA2B61D45A82C00B47108 /* LCBatchRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCBatchRequest.m; sourceTree = "<group>"; };
+		1D0EA2B71D45A82C00B47108 /* LCBatchRequestAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCBatchRequestAgent.h; sourceTree = "<group>"; };
+		1D0EA2B81D45A82C00B47108 /* LCBatchRequestAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCBatchRequestAgent.m; sourceTree = "<group>"; };
+		1D0EA2B91D45A82C00B47108 /* LCChainRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCChainRequest.h; sourceTree = "<group>"; };
+		1D0EA2BA1D45A82C00B47108 /* LCChainRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCChainRequest.m; sourceTree = "<group>"; };
+		1D0EA2BB1D45A82C00B47108 /* LCChainRequestAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCChainRequestAgent.h; sourceTree = "<group>"; };
+		1D0EA2BC1D45A82C00B47108 /* LCChainRequestAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCChainRequestAgent.m; sourceTree = "<group>"; };
+		1D0EA2BD1D45A82C00B47108 /* LCNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCNetwork.h; sourceTree = "<group>"; };
+		1D0EA2BE1D45A82C00B47108 /* LCNetworkAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCNetworkAgent.h; sourceTree = "<group>"; };
+		1D0EA2BF1D45A82C00B47108 /* LCNetworkAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCNetworkAgent.m; sourceTree = "<group>"; };
+		1D0EA2C01D45A82C00B47108 /* LCNetworkConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCNetworkConfig.h; sourceTree = "<group>"; };
+		1D0EA2C11D45A82C00B47108 /* LCNetworkConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCNetworkConfig.m; sourceTree = "<group>"; };
+		1D0EA2CA1D45A8AE00B47108 /* TMCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMCache.h; sourceTree = "<group>"; };
+		1D0EA2CB1D45A8AE00B47108 /* TMCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMCache.m; sourceTree = "<group>"; };
+		1D0EA2CC1D45A8AE00B47108 /* TMCacheBackgroundTaskManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMCacheBackgroundTaskManager.h; sourceTree = "<group>"; };
+		1D0EA2CD1D45A8AE00B47108 /* TMDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMDiskCache.h; sourceTree = "<group>"; };
+		1D0EA2CE1D45A8AE00B47108 /* TMDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMDiskCache.m; sourceTree = "<group>"; };
+		1D0EA2CF1D45A8AE00B47108 /* TMMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMMemoryCache.h; sourceTree = "<group>"; };
+		1D0EA2D01D45A8AE00B47108 /* TMMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMMemoryCache.m; sourceTree = "<group>"; };
 		1D9408631D41BA47009E2E11 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
 		1D9408641D41BA47009E2E11 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
 		1D9408671D41BE2D009E2E11 /* MessageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageManager.h; sourceTree = "<group>"; };
@@ -591,6 +626,10 @@
 		1DA71B8E1D3DCC3D007483D2 /* TTBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTBaseViewController.m; sourceTree = "<group>"; };
 		1DA71B901D3DCC9D007483D2 /* TTBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTBaseNavigationController.h; sourceTree = "<group>"; };
 		1DA71B911D3DCC9D007483D2 /* TTBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTBaseNavigationController.m; sourceTree = "<group>"; };
+		1DB926131D46F4F4003676AC /* LCProcessFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCProcessFilter.h; sourceTree = "<group>"; };
+		1DB926141D46F4F4003676AC /* LCProcessFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCProcessFilter.m; sourceTree = "<group>"; };
+		1DB926151D46F4F4003676AC /* LCRequestAccessory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCRequestAccessory.h; sourceTree = "<group>"; };
+		1DB926161D46F4F4003676AC /* LCRequestAccessory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCRequestAccessory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1079,6 +1118,44 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		1D0EA2B11D45A82C00B47108 /* LCNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				1DB926121D46F4F4003676AC /* NetworkHelper */,
+				1D0EA2B21D45A82C00B47108 /* LCBaseRequest+Internal.h */,
+				1D0EA2B31D45A82C00B47108 /* LCBaseRequest.h */,
+				1D0EA2B41D45A82C00B47108 /* LCBaseRequest.m */,
+				1D0EA2B51D45A82C00B47108 /* LCBatchRequest.h */,
+				1D0EA2B61D45A82C00B47108 /* LCBatchRequest.m */,
+				1D0EA2B71D45A82C00B47108 /* LCBatchRequestAgent.h */,
+				1D0EA2B81D45A82C00B47108 /* LCBatchRequestAgent.m */,
+				1D0EA2B91D45A82C00B47108 /* LCChainRequest.h */,
+				1D0EA2BA1D45A82C00B47108 /* LCChainRequest.m */,
+				1D0EA2BB1D45A82C00B47108 /* LCChainRequestAgent.h */,
+				1D0EA2BC1D45A82C00B47108 /* LCChainRequestAgent.m */,
+				1D0EA2BD1D45A82C00B47108 /* LCNetwork.h */,
+				1D0EA2BE1D45A82C00B47108 /* LCNetworkAgent.h */,
+				1D0EA2BF1D45A82C00B47108 /* LCNetworkAgent.m */,
+				1D0EA2C01D45A82C00B47108 /* LCNetworkConfig.h */,
+				1D0EA2C11D45A82C00B47108 /* LCNetworkConfig.m */,
+			);
+			path = LCNetwork;
+			sourceTree = "<group>";
+		};
+		1D0EA2C91D45A8AD00B47108 /* TMCache */ = {
+			isa = PBXGroup;
+			children = (
+				1D0EA2CA1D45A8AE00B47108 /* TMCache.h */,
+				1D0EA2CB1D45A8AE00B47108 /* TMCache.m */,
+				1D0EA2CC1D45A8AE00B47108 /* TMCacheBackgroundTaskManager.h */,
+				1D0EA2CD1D45A8AE00B47108 /* TMDiskCache.h */,
+				1D0EA2CE1D45A8AE00B47108 /* TMDiskCache.m */,
+				1D0EA2CF1D45A8AE00B47108 /* TMMemoryCache.h */,
+				1D0EA2D01D45A8AE00B47108 /* TMMemoryCache.m */,
+			);
+			path = TMCache;
+			sourceTree = "<group>";
+		};
 		1D9408621D41B9C0009E2E11 /* NetworkManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -1349,6 +1426,8 @@
 		1DA71B751D3DB618007483D2 /* Third */ = {
 			isa = PBXGroup;
 			children = (
+				1D0EA2C91D45A8AD00B47108 /* TMCache */,
+				1D0EA2B11D45A82C00B47108 /* LCNetwork */,
 				1D9580281D3E123800FD0053 /* AFNetworking */,
 				1D09CCC21D3F550300F85E9A /* HYBHelperKitSources */,
 				1D9580B61D3E225100FD0053 /* Masonry */,
@@ -1425,6 +1504,17 @@
 				1DA71B911D3DCC9D007483D2 /* TTBaseNavigationController.m */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		1DB926121D46F4F4003676AC /* NetworkHelper */ = {
+			isa = PBXGroup;
+			children = (
+				1DB926131D46F4F4003676AC /* LCProcessFilter.h */,
+				1DB926141D46F4F4003676AC /* LCProcessFilter.m */,
+				1DB926151D46F4F4003676AC /* LCRequestAccessory.h */,
+				1DB926161D46F4F4003676AC /* LCRequestAccessory.m */,
+			);
+			path = NetworkHelper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1509,6 +1599,7 @@
 				1D9580AC1D3E207200FD0053 /* MJRefreshBackStateFooter.m in Sources */,
 				1D09CC7B1D3F29C900F85E9A /* YYKVStorage.m in Sources */,
 				1D09CD261D3F550300F85E9A /* UIGestureRecognizer+HYBHelperBlockKit.m in Sources */,
+				1D0EA2C31D45A82C00B47108 /* LCBatchRequest.m in Sources */,
 				1D9580A51D3E207200FD0053 /* MJRefreshFooter.m in Sources */,
 				1D09CC901D3F29C900F85E9A /* YYTextKeyboardManager.m in Sources */,
 				1D09CC701D3F29C900F85E9A /* UIDevice+YYAdd.m in Sources */,
@@ -1521,6 +1612,7 @@
 				1D09CC951D3F29C900F85E9A /* NSAttributedString+YYText.m in Sources */,
 				1D09CC7F1D3F29C900F85E9A /* MKAnnotationView+YYWebImage.m in Sources */,
 				1D09CC771D3F29C900F85E9A /* UITextField+YYAdd.m in Sources */,
+				1D0EA2C61D45A82C00B47108 /* LCChainRequestAgent.m in Sources */,
 				1D9580B51D3E207200FD0053 /* UIView+MJExtension.m in Sources */,
 				1DA71B621D3DB5A1007483D2 /* AppDelegate.m in Sources */,
 				1D9580B31D3E207200FD0053 /* UIScrollView+MJExtension.m in Sources */,
@@ -1530,11 +1622,14 @@
 				1D09CCA81D3F29C900F85E9A /* YYThreadSafeDictionary.m in Sources */,
 				1D09CC981D3F29C900F85E9A /* YYTextArchiver.m in Sources */,
 				1D9580A91D3E207200FD0053 /* MJRefreshAutoStateFooter.m in Sources */,
+				1D0EA2C21D45A82C00B47108 /* LCBaseRequest.m in Sources */,
+				1DB926171D46F4F4003676AC /* LCProcessFilter.m in Sources */,
 				1D09CC651D3F29C900F85E9A /* NSObject+YYAddForKVO.m in Sources */,
 				1D9580D31D3E225200FD0053 /* MASConstraint.m in Sources */,
 				1D09CD551D3F59D500F85E9A /* MKAnnotationView+WebCache.m in Sources */,
 				1D09CCA51D3F29C900F85E9A /* YYReachability.m in Sources */,
 				1D09CC8E1D3F29C900F85E9A /* YYTextEffectWindow.m in Sources */,
+				1D0EA2D31D45A8AE00B47108 /* TMMemoryCache.m in Sources */,
 				1D09CCA71D3F29C900F85E9A /* YYThreadSafeArray.m in Sources */,
 				1D09CC5C1D3F29C900F85E9A /* NSBundle+YYAdd.m in Sources */,
 				1D09CC921D3F29C900F85E9A /* YYTextLine.m in Sources */,
@@ -1552,6 +1647,7 @@
 				1DA71B921D3DCC9D007483D2 /* TTBaseNavigationController.m in Sources */,
 				1D95803B1D3E123800FD0053 /* AFURLSessionManager.m in Sources */,
 				1D09CD5D1D3F59D500F85E9A /* UIView+WebCacheOperation.m in Sources */,
+				1DB926181D46F4F4003676AC /* LCRequestAccessory.m in Sources */,
 				1D9580A61D3E207200FD0053 /* MJRefreshHeader.m in Sources */,
 				1D09CD121D3F550300F85E9A /* NSDate+HYBHelperKit.m in Sources */,
 				1D9580B21D3E207200FD0053 /* NSBundle+MJRefresh.m in Sources */,
@@ -1617,9 +1713,11 @@
 				1D09CC601D3F29C900F85E9A /* NSKeyedUnarchiver+YYAdd.m in Sources */,
 				1D09CC611D3F29C900F85E9A /* NSNotificationCenter+YYAdd.m in Sources */,
 				1D09CD621D3F59D500F85E9A /* SDWebImageManager.m in Sources */,
+				1D0EA2D21D45A8AE00B47108 /* TMDiskCache.m in Sources */,
 				1D09CD611D3F59D500F85E9A /* SDWebImageDecoder.m in Sources */,
 				1D9580381D3E123800FD0053 /* AFSecurityPolicy.m in Sources */,
 				1D9580361D3E123800FD0053 /* AFHTTPSessionManager.m in Sources */,
+				1D0EA2C41D45A82C00B47108 /* LCBatchRequestAgent.m in Sources */,
 				1D09CC8B1D3F29C900F85E9A /* YYClassInfo.m in Sources */,
 				1D9580AD1D3E207200FD0053 /* MJRefreshGifHeader.m in Sources */,
 				1D09CC881D3F29C900F85E9A /* YYWebImageManager.m in Sources */,
@@ -1645,6 +1743,7 @@
 				1D09CD201D3F550300F85E9A /* UITableView+HYBMasonryKit.m in Sources */,
 				1DA71B851D3DBA67007483D2 /* main.m in Sources */,
 				1D09CCA01D3F29C900F85E9A /* YYAsyncLayer.m in Sources */,
+				1D0EA2C51D45A82C00B47108 /* LCChainRequest.m in Sources */,
 				1DA71B8F1D3DCC3D007483D2 /* TTBaseViewController.m in Sources */,
 				1D9580AF1D3E207200FD0053 /* MJRefreshStateHeader.m in Sources */,
 				1D9408651D41BA47009E2E11 /* NetworkManager.m in Sources */,
@@ -1661,6 +1760,8 @@
 				1D09CD591D3F59D500F85E9A /* UIImage+MultiFormat.m in Sources */,
 				1D9580B11D3E207200FD0053 /* MJRefreshConst.m in Sources */,
 				1D09CD541D3F59D500F85E9A /* SDImageCache.m in Sources */,
+				1D0EA2C81D45A82C00B47108 /* LCNetworkConfig.m in Sources */,
+				1D0EA2D11D45A8AE00B47108 /* TMCache.m in Sources */,
 				1D9580D81D3E225200FD0053 /* NSArray+MASAdditions.m in Sources */,
 				1D9580721D3E1ADD00FD0053 /* MBProgressHUD.m in Sources */,
 				1D09CC851D3F29C900F85E9A /* YYImageCache.m in Sources */,
@@ -1672,6 +1773,7 @@
 				1D09CC6B1D3F29C900F85E9A /* UIApplication+YYAdd.m in Sources */,
 				1D09CC791D3F29C900F85E9A /* YYCache.m in Sources */,
 				1D09CC911D3F29C900F85E9A /* YYTextLayout.m in Sources */,
+				1D0EA2C71D45A82C00B47108 /* LCNetworkAgent.m in Sources */,
 				1D09CD101D3F550300F85E9A /* HYBHelperKitTestEntranceController.m in Sources */,
 				1D9580A41D3E207200FD0053 /* MJRefreshComponent.m in Sources */,
 			);
