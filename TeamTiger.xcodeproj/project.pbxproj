@@ -211,6 +211,10 @@
 		1DA71B921D3DCC9D007483D2 /* TTBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA71B911D3DCC9D007483D2 /* TTBaseNavigationController.m */; };
 		1DB926171D46F4F4003676AC /* LCProcessFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB926141D46F4F4003676AC /* LCProcessFilter.m */; };
 		1DB926181D46F4F4003676AC /* LCRequestAccessory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB926161D46F4F4003676AC /* LCRequestAccessory.m */; };
+		1DF991CC1D488C0F00E7D1B8 /* TYLaunchBaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF991C51D488C0F00E7D1B8 /* TYLaunchBaseAnimation.m */; };
+		1DF991CD1D488C0F00E7D1B8 /* TYLaunchFadeScaleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF991C71D488C0F00E7D1B8 /* TYLaunchFadeScaleAnimation.m */; };
+		1DF991CE1D488C0F00E7D1B8 /* UIImage+TYLaunchImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF991C91D488C0F00E7D1B8 /* UIImage+TYLaunchImage.m */; };
+		1DF991CF1D488C0F00E7D1B8 /* UIView+TYLaunchAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF991CB1D488C0F00E7D1B8 /* UIView+TYLaunchAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -627,6 +631,15 @@
 		1DB926141D46F4F4003676AC /* LCProcessFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCProcessFilter.m; sourceTree = "<group>"; };
 		1DB926151D46F4F4003676AC /* LCRequestAccessory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCRequestAccessory.h; sourceTree = "<group>"; };
 		1DB926161D46F4F4003676AC /* LCRequestAccessory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCRequestAccessory.m; sourceTree = "<group>"; };
+		1DF991C31D488C0F00E7D1B8 /* TYLaunchAnimationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYLaunchAnimationProtocol.h; sourceTree = "<group>"; };
+		1DF991C41D488C0F00E7D1B8 /* TYLaunchBaseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYLaunchBaseAnimation.h; sourceTree = "<group>"; };
+		1DF991C51D488C0F00E7D1B8 /* TYLaunchBaseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYLaunchBaseAnimation.m; sourceTree = "<group>"; };
+		1DF991C61D488C0F00E7D1B8 /* TYLaunchFadeScaleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYLaunchFadeScaleAnimation.h; sourceTree = "<group>"; };
+		1DF991C71D488C0F00E7D1B8 /* TYLaunchFadeScaleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYLaunchFadeScaleAnimation.m; sourceTree = "<group>"; };
+		1DF991C81D488C0F00E7D1B8 /* UIImage+TYLaunchImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TYLaunchImage.h"; sourceTree = "<group>"; };
+		1DF991C91D488C0F00E7D1B8 /* UIImage+TYLaunchImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TYLaunchImage.m"; sourceTree = "<group>"; };
+		1DF991CA1D488C0F00E7D1B8 /* UIView+TYLaunchAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TYLaunchAnimation.h"; sourceTree = "<group>"; };
+		1DF991CB1D488C0F00E7D1B8 /* UIView+TYLaunchAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TYLaunchAnimation.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1421,6 +1434,7 @@
 		1DA71B751D3DB618007483D2 /* Third */ = {
 			isa = PBXGroup;
 			children = (
+				1DF991C21D488C0F00E7D1B8 /* TYLaunchAnimation */,
 				1D0EA2C91D45A8AD00B47108 /* TMCache */,
 				1D0EA2B11D45A82C00B47108 /* LCNetwork */,
 				1D9580281D3E123800FD0053 /* AFNetworking */,
@@ -1510,6 +1524,22 @@
 				1DB926161D46F4F4003676AC /* LCRequestAccessory.m */,
 			);
 			path = NetworkHelper;
+			sourceTree = "<group>";
+		};
+		1DF991C21D488C0F00E7D1B8 /* TYLaunchAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				1DF991C31D488C0F00E7D1B8 /* TYLaunchAnimationProtocol.h */,
+				1DF991C41D488C0F00E7D1B8 /* TYLaunchBaseAnimation.h */,
+				1DF991C51D488C0F00E7D1B8 /* TYLaunchBaseAnimation.m */,
+				1DF991C61D488C0F00E7D1B8 /* TYLaunchFadeScaleAnimation.h */,
+				1DF991C71D488C0F00E7D1B8 /* TYLaunchFadeScaleAnimation.m */,
+				1DF991C81D488C0F00E7D1B8 /* UIImage+TYLaunchImage.h */,
+				1DF991C91D488C0F00E7D1B8 /* UIImage+TYLaunchImage.m */,
+				1DF991CA1D488C0F00E7D1B8 /* UIView+TYLaunchAnimation.h */,
+				1DF991CB1D488C0F00E7D1B8 /* UIView+TYLaunchAnimation.m */,
+			);
+			path = TYLaunchAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1678,6 +1708,7 @@
 				1D09CD2A1D3F550300F85E9A /* UIColor+HYBHelperKitUIKit.m in Sources */,
 				1D09CD221D3F550300F85E9A /* UIView+HYBMasonryKit.m in Sources */,
 				1D09CC721D3F29C900F85E9A /* UIGestureRecognizer+YYAdd.m in Sources */,
+				1DF991CD1D488C0F00E7D1B8 /* TYLaunchFadeScaleAnimation.m in Sources */,
 				1D09CCAA1D3F29C900F85E9A /* YYTransaction.m in Sources */,
 				1D09CD131D3F550300F85E9A /* NSDictionary+HYBHelperKit.m in Sources */,
 				1D09CC9F1D3F29C900F85E9A /* YYTextView.m in Sources */,
@@ -1709,6 +1740,7 @@
 				1D09CD621D3F59D500F85E9A /* SDWebImageManager.m in Sources */,
 				1D0EA2D21D45A8AE00B47108 /* TMDiskCache.m in Sources */,
 				1D09CD611D3F59D500F85E9A /* SDWebImageDecoder.m in Sources */,
+				1DF991CF1D488C0F00E7D1B8 /* UIView+TYLaunchAnimation.m in Sources */,
 				1D9580381D3E123800FD0053 /* AFSecurityPolicy.m in Sources */,
 				1D9580361D3E123800FD0053 /* AFHTTPSessionManager.m in Sources */,
 				1D0EA2C41D45A82C00B47108 /* LCBatchRequestAgent.m in Sources */,
@@ -1720,8 +1752,10 @@
 				1D09CC9E1D3F29C900F85E9A /* YYLabel.m in Sources */,
 				1D09CC5E1D3F29C900F85E9A /* NSDate+YYAdd.m in Sources */,
 				1D09CC8F1D3F29C900F85E9A /* YYTextInput.m in Sources */,
+				1DF991CC1D488C0F00E7D1B8 /* TYLaunchBaseAnimation.m in Sources */,
 				1D09CC8D1D3F29C900F85E9A /* YYTextDebugOption.m in Sources */,
 				1D9580A81D3E207200FD0053 /* MJRefreshAutoNormalFooter.m in Sources */,
+				1DF991CE1D488C0F00E7D1B8 /* UIImage+TYLaunchImage.m in Sources */,
 				1D09CD581D3F59D500F85E9A /* UIImage+GIF.m in Sources */,
 				1D09CD2C1D3F550300F85E9A /* UIView+HYBHelperKitUIKit.m in Sources */,
 				1D09CC6C1D3F29C900F85E9A /* UIBarButtonItem+YYAdd.m in Sources */,
@@ -1873,6 +1907,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TeamTiger/Resource/TeamTiger-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/TeamTiger/Resource/Info.plist";
@@ -1887,6 +1922,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TeamTiger/Resource/TeamTiger-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/TeamTiger/Resource/Info.plist";

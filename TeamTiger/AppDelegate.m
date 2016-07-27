@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "UIImage+TYLaunchImage.h"
+#import "UIView+TYLaunchAnimation.h"
+#import "TYLaunchFadeScaleAnimation.h"
 
 @interface AppDelegate ()
 
@@ -24,6 +27,13 @@
     ViewController *vc = [[ViewController alloc] init];
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
+    //launch image
+    UIImageView *screenImageView = [[UIImageView alloc] initWithImage:[UIImage ty_getLaunchImage]];
+    [screenImageView showInWindowWithAnimation:[TYLaunchFadeScaleAnimation fadeScaleAnimation]
+                                    completion:^(BOOL finished) {
+                                        [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
+                                        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+                                    }];
     return YES;
 }
 
