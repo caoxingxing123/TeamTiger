@@ -7,10 +7,11 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "HomeViewController.h"
 #import "UIImage+TYLaunchImage.h"
 #import "UIView+TYLaunchAnimation.h"
 #import "TYLaunchFadeScaleAnimation.h"
+#import "TTBaseNavigationController.h"
 
 @interface AppDelegate ()
 
@@ -24,8 +25,9 @@
         self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     }
     [self initialMethods];
-    ViewController *vc = [[ViewController alloc] init];
-    self.window.rootViewController = vc;
+    HomeViewController *homeVc = [[HomeViewController alloc] init];
+    TTBaseNavigationController *rootNavi = [[TTBaseNavigationController alloc] initWithRootViewController:homeVc];
+    self.window.rootViewController = rootNavi;
     [self.window makeKeyAndVisible];
     //launch image
     UIImageView *screenImageView = [[UIImageView alloc] initWithImage:[UIImage ty_getLaunchImage]];

@@ -6,14 +6,14 @@
 //  Copyright © 2016年 MobileArtisan. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "HomeViewController.h"
 #import "NetworkManager.h"
 
-@interface ViewController ()
+@interface HomeViewController ()
 
 @end
 
-@implementation ViewController
+@implementation HomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -203,7 +203,6 @@
 		1D9580EB1D3E26CE00FD0053 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D9580EA1D3E26CE00FD0053 /* libsqlite3.tbd */; };
 		1D9580ED1D3E26F800FD0053 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D9580EC1D3E26F800FD0053 /* libsqlite3.0.tbd */; };
 		1DA71B621D3DB5A1007483D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA71B611D3DB5A1007483D2 /* AppDelegate.m */; };
-		1DA71B791D3DB640007483D2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA71B781D3DB640007483D2 /* ViewController.m */; };
 		1DA71B821D3DBA67007483D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DA71B7D1D3DBA67007483D2 /* LaunchScreen.storyboard */; };
 		1DA71B841D3DBA67007483D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DA71B801D3DBA67007483D2 /* Assets.xcassets */; };
 		1DA71B851D3DBA67007483D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA71B811D3DBA67007483D2 /* main.m */; };
@@ -215,6 +214,7 @@
 		1DF991CD1D488C0F00E7D1B8 /* TYLaunchFadeScaleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF991C71D488C0F00E7D1B8 /* TYLaunchFadeScaleAnimation.m */; };
 		1DF991CE1D488C0F00E7D1B8 /* UIImage+TYLaunchImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF991C91D488C0F00E7D1B8 /* UIImage+TYLaunchImage.m */; };
 		1DF991CF1D488C0F00E7D1B8 /* UIView+TYLaunchAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF991CB1D488C0F00E7D1B8 /* UIView+TYLaunchAnimation.m */; };
+		1DF991D31D4898A800E7D1B8 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF991D21D4898A800E7D1B8 /* HomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -613,8 +613,6 @@
 		1DA71B5A1D3DB5A1007483D2 /* TeamTiger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamTiger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DA71B601D3DB5A1007483D2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1DA71B611D3DB5A1007483D2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1DA71B771D3DB640007483D2 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1DA71B781D3DB640007483D2 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1DA71B7E1D3DBA67007483D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1DA71B7F1D3DBA67007483D2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DA71B801D3DBA67007483D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -640,6 +638,8 @@
 		1DF991C91D488C0F00E7D1B8 /* UIImage+TYLaunchImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TYLaunchImage.m"; sourceTree = "<group>"; };
 		1DF991CA1D488C0F00E7D1B8 /* UIView+TYLaunchAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TYLaunchAnimation.h"; sourceTree = "<group>"; };
 		1DF991CB1D488C0F00E7D1B8 /* UIView+TYLaunchAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TYLaunchAnimation.m"; sourceTree = "<group>"; };
+		1DF991D11D4898A800E7D1B8 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		1DF991D21D4898A800E7D1B8 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1451,9 +1451,8 @@
 		1DA71B761D3DB618007483D2 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				1DF991D01D4898A800E7D1B8 /* Home */,
 				1DA71B8C1D3DCBE6007483D2 /* Base */,
-				1DA71B771D3DB640007483D2 /* ViewController.h */,
-				1DA71B781D3DB640007483D2 /* ViewController.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -1540,6 +1539,15 @@
 				1DF991CB1D488C0F00E7D1B8 /* UIView+TYLaunchAnimation.m */,
 			);
 			path = TYLaunchAnimation;
+			sourceTree = "<group>";
+		};
+		1DF991D01D4898A800E7D1B8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1DF991D11D4898A800E7D1B8 /* HomeViewController.h */,
+				1DF991D21D4898A800E7D1B8 /* HomeViewController.m */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1633,7 +1641,6 @@
 				1D09CC741D3F29C900F85E9A /* UIScreen+YYAdd.m in Sources */,
 				1D09CCA21D3F29C900F85E9A /* YYFileHash.m in Sources */,
 				1D9580A21D3E207200FD0053 /* MJRefreshAutoFooter.m in Sources */,
-				1DA71B791D3DB640007483D2 /* ViewController.m in Sources */,
 				1D09CC951D3F29C900F85E9A /* NSAttributedString+YYText.m in Sources */,
 				1D09CC7F1D3F29C900F85E9A /* MKAnnotationView+YYWebImage.m in Sources */,
 				1D09CC771D3F29C900F85E9A /* UITextField+YYAdd.m in Sources */,
@@ -1801,6 +1808,7 @@
 				1D09CC6B1D3F29C900F85E9A /* UIApplication+YYAdd.m in Sources */,
 				1D09CC791D3F29C900F85E9A /* YYCache.m in Sources */,
 				1D09CC911D3F29C900F85E9A /* YYTextLayout.m in Sources */,
+				1DF991D31D4898A800E7D1B8 /* HomeViewController.m in Sources */,
 				1D0EA2C71D45A82C00B47108 /* LCNetworkAgent.m in Sources */,
 				1D09CD101D3F550300F85E9A /* HYBHelperKitTestEntranceController.m in Sources */,
 				1D9580A41D3E207200FD0053 /* MJRefreshComponent.m in Sources */,

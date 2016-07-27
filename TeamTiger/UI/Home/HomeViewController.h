@@ -8,7 +8,7 @@
 
 #import "TTBaseViewController.h"
 
-@interface ViewController : TTBaseViewController
+@interface HomeViewController : TTBaseViewController
 
 
 @end
