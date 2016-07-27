@@ -198,11 +198,11 @@
 }
 
 - (void)hyb_setNavLeftImage:(id)image block:(HYBButtonBlock)block {
-  UIImage *normalImage = image;
-  
-  if ([normalImage isKindOfClass:[NSString class]]) {
-    normalImage = kImage(image);
-  }
+//  UIImage *normalImage = image;
+//  
+//  if ([normalImage isKindOfClass:[NSString class]]) {
+//    normalImage = kImage(image);
+//  }
   
   UIButton *btn = [UIButton hyb_buttonWithImage:image
                                       superView:nil
