@@ -16,7 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.navigationBar.barTintColor = [UIColor colorWithRed:21/255.0f green:27/255.0f blue:39/255.0f alpha:1.0f];
+    //开启滑动返回手势
+    self.interactivePopGestureRecognizer.delegate = nil;
 }
 
 - (void)didReceiveMemoryWarning {

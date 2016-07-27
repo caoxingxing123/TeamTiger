@@ -34,7 +34,7 @@
     [screenImageView showInWindowWithAnimation:[TYLaunchFadeScaleAnimation fadeScaleAnimation]
                                     completion:^(BOOL finished) {
                                         [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
-                                        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+                                        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
                                     }];
     return YES;
 }

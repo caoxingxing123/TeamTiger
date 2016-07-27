@@ -16,5 +16,6 @@
 #import <Foundation/Foundation.h>
 #import "SqliteManager.h"
 #import "Constant.h"
+#import "Masonry.h"
 
 #endif /* TeamTiger_Prefix_pch */

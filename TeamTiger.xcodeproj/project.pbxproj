@@ -215,6 +215,7 @@
 		1DF991CE1D488C0F00E7D1B8 /* UIImage+TYLaunchImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF991C91D488C0F00E7D1B8 /* UIImage+TYLaunchImage.m */; };
 		1DF991CF1D488C0F00E7D1B8 /* UIView+TYLaunchAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF991CB1D488C0F00E7D1B8 /* UIView+TYLaunchAnimation.m */; };
 		1DF991D31D4898A800E7D1B8 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF991D21D4898A800E7D1B8 /* HomeViewController.m */; };
+		1DF991D71D48ADD900E7D1B8 /* TTSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF991D61D48ADD900E7D1B8 /* TTSettingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -640,6 +641,8 @@
 		1DF991CB1D488C0F00E7D1B8 /* UIView+TYLaunchAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TYLaunchAnimation.m"; sourceTree = "<group>"; };
 		1DF991D11D4898A800E7D1B8 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		1DF991D21D4898A800E7D1B8 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		1DF991D51D48ADD900E7D1B8 /* TTSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSettingViewController.h; sourceTree = "<group>"; };
+		1DF991D61D48ADD900E7D1B8 /* TTSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTSettingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1451,6 +1454,7 @@
 		1DA71B761D3DB618007483D2 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				1DF991D41D48ADB300E7D1B8 /* Setting */,
 				1DF991D01D4898A800E7D1B8 /* Home */,
 				1DA71B8C1D3DCBE6007483D2 /* Base */,
 			);
@@ -1548,6 +1552,15 @@
 				1DF991D21D4898A800E7D1B8 /* HomeViewController.m */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		1DF991D41D48ADB300E7D1B8 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				1DF991D51D48ADD900E7D1B8 /* TTSettingViewController.h */,
+				1DF991D61D48ADD900E7D1B8 /* TTSettingViewController.m */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1806,6 +1819,7 @@
 				1D09CD1B1D3F550300F85E9A /* NSUserDefaults+HYBHelperKit.m in Sources */,
 				1D09CC621D3F29C900F85E9A /* NSNumber+YYAdd.m in Sources */,
 				1D09CC6B1D3F29C900F85E9A /* UIApplication+YYAdd.m in Sources */,
+				1DF991D71D48ADD900E7D1B8 /* TTSettingViewController.m in Sources */,
 				1D09CC791D3F29C900F85E9A /* YYCache.m in Sources */,
 				1D09CC911D3F29C900F85E9A /* YYTextLayout.m in Sources */,
 				1DF991D31D4898A800E7D1B8 /* HomeViewController.m in Sources */,
