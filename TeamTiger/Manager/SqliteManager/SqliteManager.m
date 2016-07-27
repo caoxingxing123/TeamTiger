@@ -379,15 +379,6 @@ hasKDbIdColumnInNewTable:(BOOL)hasKDbIdColumnInNewTable
       isFieldTypeChanged:NO
          ];
         
-        //T_TASK_STATES
-        [self checkTable:database
-               tableName:@"TASK_STATES"
-               allFields:@[@"state_description",@"state_code",@"task_type"].mutableCopy
-           allFieldTypes:@[@"NVARCHAR",@"INT",@"INT"].mutableCopy
-             primaryKeys:nil
-      isFieldTypeChanged:NO
-         ];
-
         //
         //    //add preparePredefineDatas
         //    [SqliteManager preparePredefineDatas:database commands:

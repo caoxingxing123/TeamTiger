@@ -14,5 +14,7 @@
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+#import "SqliteManager.h"
+#import "Constant.h"
 
 #endif /* TeamTiger_Prefix_pch */

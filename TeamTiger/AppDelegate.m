@@ -52,6 +52,8 @@
 #pragma -mark initial methods
 - (void)initialMethods {
     //DataBase
+    [SQLITEMANAGER setDataBasePath:SYSTEM];
+    [SQLITEMANAGER createDataBaseIsNeedUpdate:YES isForUser:NO];
 }
 
 @end
