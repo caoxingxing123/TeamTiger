@@ -9,5 +9,7 @@
 #ifndef Macros_h
 #define Macros_h
 
+//从nib中加载cell
+#define LoadFromNib(nibName)  [[[NSBundle mainBundle] loadNibNamed:nibName owner:self options:nil] lastObject]
 
 #endif /* Macros_h */
