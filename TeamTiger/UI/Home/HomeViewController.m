@@ -39,7 +39,7 @@
         make.width.mas_equalTo(100);
         make.height.mas_equalTo(100);
     } touchUp:^(UIButton *sender) {
-        TTSettingViewController *settingVC = [[TTSettingViewController alloc] init];
+        TTSettingViewController *settingVC = [[TTSettingViewController alloc] initWithNibName:@"TTSettingViewController" bundle:nil];
         [self.navigationController pushViewController:settingVC animated:YES];
     }];
     btn.backgroundColor = [UIColor redColor];

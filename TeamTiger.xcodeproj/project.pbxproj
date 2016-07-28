@@ -157,6 +157,10 @@
 		1D0EA2D11D45A8AE00B47108 /* TMCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0EA2CB1D45A8AE00B47108 /* TMCache.m */; };
 		1D0EA2D21D45A8AE00B47108 /* TMDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0EA2CE1D45A8AE00B47108 /* TMDiskCache.m */; };
 		1D0EA2D31D45A8AE00B47108 /* TMMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0EA2D01D45A8AE00B47108 /* TMMemoryCache.m */; };
+		1D55FD8F1D49A19900094112 /* TTSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D55FD8E1D49A19900094112 /* TTSettingViewController.xib */; };
+		1D55FD941D49AAA400094112 /* SettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D55FD921D49AAA400094112 /* SettingCell.m */; };
+		1D55FD951D49AAA400094112 /* SettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D55FD931D49AAA400094112 /* SettingCell.xib */; };
+		1D55FD981D49ABAC00094112 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D55FD971D49ABAC00094112 /* Common.m */; };
 		1D9408651D41BA47009E2E11 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9408641D41BA47009E2E11 /* NetworkManager.m */; };
 		1D9408691D41BE2D009E2E11 /* MessageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9408681D41BE2D009E2E11 /* MessageManager.m */; };
 		1D9580361D3E123800FD0053 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D95802A1D3E123800FD0053 /* AFHTTPSessionManager.m */; };
@@ -518,6 +522,12 @@
 		1D0EA2CE1D45A8AE00B47108 /* TMDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMDiskCache.m; sourceTree = "<group>"; };
 		1D0EA2CF1D45A8AE00B47108 /* TMMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMMemoryCache.h; sourceTree = "<group>"; };
 		1D0EA2D01D45A8AE00B47108 /* TMMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMMemoryCache.m; sourceTree = "<group>"; };
+		1D55FD8E1D49A19900094112 /* TTSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTSettingViewController.xib; sourceTree = "<group>"; };
+		1D55FD911D49AAA400094112 /* SettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingCell.h; sourceTree = "<group>"; };
+		1D55FD921D49AAA400094112 /* SettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingCell.m; sourceTree = "<group>"; };
+		1D55FD931D49AAA400094112 /* SettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingCell.xib; sourceTree = "<group>"; };
+		1D55FD961D49ABAC00094112 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		1D55FD971D49ABAC00094112 /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
 		1D9408631D41BA47009E2E11 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
 		1D9408641D41BA47009E2E11 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
 		1D9408671D41BE2D009E2E11 /* MessageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageManager.h; sourceTree = "<group>"; };
@@ -1169,6 +1179,16 @@
 			path = TMCache;
 			sourceTree = "<group>";
 		};
+		1D55FD901D49AA8200094112 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1D55FD911D49AAA400094112 /* SettingCell.h */,
+				1D55FD921D49AAA400094112 /* SettingCell.m */,
+				1D55FD931D49AAA400094112 /* SettingCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		1D9408621D41B9C0009E2E11 /* NetworkManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -1496,6 +1516,8 @@
 		1DA71B8A1D3DCAB0007483D2 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				1D55FD961D49ABAC00094112 /* Common.h */,
+				1D55FD971D49ABAC00094112 /* Common.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1557,8 +1579,10 @@
 		1DF991D41D48ADB300E7D1B8 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				1D55FD901D49AA8200094112 /* View */,
 				1DF991D51D48ADD900E7D1B8 /* TTSettingViewController.h */,
 				1DF991D61D48ADD900E7D1B8 /* TTSettingViewController.m */,
+				1D55FD8E1D49A19900094112 /* TTSettingViewController.xib */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -1620,9 +1644,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D55FD8F1D49A19900094112 /* TTSettingViewController.xib in Resources */,
 				1D9580D11D3E225200FD0053 /* Info.plist in Resources */,
 				1DA71B841D3DBA67007483D2 /* Assets.xcassets in Resources */,
 				1DA71B821D3DBA67007483D2 /* LaunchScreen.storyboard in Resources */,
+				1D55FD951D49AAA400094112 /* SettingCell.xib in Resources */,
 				1D9580B01D3E207200FD0053 /* MJRefresh.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1694,6 +1720,7 @@
 				1D09CD5D1D3F59D500F85E9A /* UIView+WebCacheOperation.m in Sources */,
 				1DB926181D46F4F4003676AC /* LCRequestAccessory.m in Sources */,
 				1D9580A61D3E207200FD0053 /* MJRefreshHeader.m in Sources */,
+				1D55FD941D49AAA400094112 /* SettingCell.m in Sources */,
 				1D09CD121D3F550300F85E9A /* NSDate+HYBHelperKit.m in Sources */,
 				1D9580B21D3E207200FD0053 /* NSBundle+MJRefresh.m in Sources */,
 				1D9580DA1D3E225200FD0053 /* View+MASAdditions.m in Sources */,
@@ -1785,6 +1812,7 @@
 				1D09CC961D3F29C900F85E9A /* NSParagraphStyle+YYText.m in Sources */,
 				1D09CCA31D3F29C900F85E9A /* YYGestureRecognizer.m in Sources */,
 				1D9580AA1D3E207200FD0053 /* MJRefreshBackGifFooter.m in Sources */,
+				1D55FD981D49ABAC00094112 /* Common.m in Sources */,
 				1D09CC6E1D3F29C900F85E9A /* UIColor+YYAdd.m in Sources */,
 				1D09CC681D3F29C900F85E9A /* NSTimer+YYAdd.m in Sources */,
 				1D09CD571D3F59D500F85E9A /* UIButton+WebCache.m in Sources */,
