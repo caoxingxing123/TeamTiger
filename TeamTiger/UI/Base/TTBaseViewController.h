@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HYBHelperKitBaseController.h"
 
-@interface TTBaseViewController : UIViewController
+@interface TTBaseViewController : HYBHelperKitBaseController
 
 @end
