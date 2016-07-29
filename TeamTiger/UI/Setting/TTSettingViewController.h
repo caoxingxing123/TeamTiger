@@ -13,4 +13,6 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *contentTable;
 
+@property (strong, nonatomic)NSMutableArray *datas;
+
 @end

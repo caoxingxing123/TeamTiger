@@ -157,6 +157,7 @@
 		1D0EA2D11D45A8AE00B47108 /* TMCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0EA2CB1D45A8AE00B47108 /* TMCache.m */; };
 		1D0EA2D21D45A8AE00B47108 /* TMDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0EA2CE1D45A8AE00B47108 /* TMDiskCache.m */; };
 		1D0EA2D31D45A8AE00B47108 /* TMMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0EA2D01D45A8AE00B47108 /* TMMemoryCache.m */; };
+		1D115F2E1D4B9560003DFBB1 /* UITextView+PlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D115F2D1D4B9560003DFBB1 /* UITextView+PlaceHolder.m */; };
 		1D55FD8F1D49A19900094112 /* TTSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D55FD8E1D49A19900094112 /* TTSettingViewController.xib */; };
 		1D55FD941D49AAA400094112 /* SettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D55FD921D49AAA400094112 /* SettingCell.m */; };
 		1D55FD951D49AAA400094112 /* SettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D55FD931D49AAA400094112 /* SettingCell.xib */; };
@@ -212,6 +213,24 @@
 		1DA71B851D3DBA67007483D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA71B811D3DBA67007483D2 /* main.m */; };
 		1DA71B8F1D3DCC3D007483D2 /* TTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA71B8E1D3DCC3D007483D2 /* TTBaseViewController.m */; };
 		1DA71B921D3DCC9D007483D2 /* TTBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA71B911D3DCC9D007483D2 /* TTBaseNavigationController.m */; };
+		1DB5A5701D4B3EF1009E6170 /* TTFadeSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB5A56C1D4B3EF1009E6170 /* TTFadeSwitch.m */; };
+		1DB5A5711D4B3EF1009E6170 /* TTSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB5A56E1D4B3EF1009E6170 /* TTSwitch.m */; };
+		1DB5A5861D4B3F36009E6170 /* switchGreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DB5A5741D4B3F36009E6170 /* switchGreen@2x.png */; };
+		1DB5A5871D4B3F36009E6170 /* switchMask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DB5A5751D4B3F36009E6170 /* switchMask@2x.png */; };
+		1DB5A5881D4B3F36009E6170 /* switchRed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DB5A5761D4B3F36009E6170 /* switchRed@2x.png */; };
+		1DB5A5891D4B3F36009E6170 /* switchToggle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DB5A5771D4B3F36009E6170 /* switchToggle@2x.png */; };
+		1DB5A58A1D4B3F36009E6170 /* switchToggleHigh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DB5A5781D4B3F36009E6170 /* switchToggleHigh@2x.png */; };
+		1DB5A58B1D4B3F36009E6170 /* round-switch-mask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DB5A57A1D4B3F36009E6170 /* round-switch-mask@2x.png */; };
+		1DB5A58C1D4B3F36009E6170 /* round-switch-overlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DB5A57B1D4B3F36009E6170 /* round-switch-overlay@2x.png */; };
+		1DB5A58D1D4B3F36009E6170 /* round-switch-thumb-highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DB5A57C1D4B3F36009E6170 /* round-switch-thumb-highlight@2x.png */; };
+		1DB5A58E1D4B3F36009E6170 /* round-switch-thumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DB5A57D1D4B3F36009E6170 /* round-switch-thumb@2x.png */; };
+		1DB5A58F1D4B3F36009E6170 /* round-switch-track-no-text@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DB5A57E1D4B3F36009E6170 /* round-switch-track-no-text@2x.png */; };
+		1DB5A5901D4B3F36009E6170 /* round-switch-track@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DB5A57F1D4B3F36009E6170 /* round-switch-track@2x.png */; };
+		1DB5A5911D4B3F36009E6170 /* square-switch-mask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DB5A5811D4B3F36009E6170 /* square-switch-mask@2x.png */; };
+		1DB5A5921D4B3F36009E6170 /* square-switch-overlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DB5A5821D4B3F36009E6170 /* square-switch-overlay@2x.png */; };
+		1DB5A5931D4B3F36009E6170 /* square-switch-thumb-highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DB5A5831D4B3F36009E6170 /* square-switch-thumb-highlight@2x.png */; };
+		1DB5A5941D4B3F36009E6170 /* square-switch-thumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DB5A5841D4B3F36009E6170 /* square-switch-thumb@2x.png */; };
+		1DB5A5951D4B3F36009E6170 /* square-switch-track@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DB5A5851D4B3F36009E6170 /* square-switch-track@2x.png */; };
 		1DB926171D46F4F4003676AC /* LCProcessFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB926141D46F4F4003676AC /* LCProcessFilter.m */; };
 		1DB926181D46F4F4003676AC /* LCRequestAccessory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB926161D46F4F4003676AC /* LCRequestAccessory.m */; };
 		1DF991CC1D488C0F00E7D1B8 /* TYLaunchBaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF991C51D488C0F00E7D1B8 /* TYLaunchBaseAnimation.m */; };
@@ -522,6 +541,8 @@
 		1D0EA2CE1D45A8AE00B47108 /* TMDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMDiskCache.m; sourceTree = "<group>"; };
 		1D0EA2CF1D45A8AE00B47108 /* TMMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMMemoryCache.h; sourceTree = "<group>"; };
 		1D0EA2D01D45A8AE00B47108 /* TMMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMMemoryCache.m; sourceTree = "<group>"; };
+		1D115F2C1D4B9560003DFBB1 /* UITextView+PlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+PlaceHolder.h"; sourceTree = "<group>"; };
+		1D115F2D1D4B9560003DFBB1 /* UITextView+PlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+PlaceHolder.m"; sourceTree = "<group>"; };
 		1D55FD8E1D49A19900094112 /* TTSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTSettingViewController.xib; sourceTree = "<group>"; };
 		1D55FD911D49AAA400094112 /* SettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingCell.h; sourceTree = "<group>"; };
 		1D55FD921D49AAA400094112 /* SettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingCell.m; sourceTree = "<group>"; };
@@ -636,6 +657,27 @@
 		1DA71B8E1D3DCC3D007483D2 /* TTBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTBaseViewController.m; sourceTree = "<group>"; };
 		1DA71B901D3DCC9D007483D2 /* TTBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTBaseNavigationController.h; sourceTree = "<group>"; };
 		1DA71B911D3DCC9D007483D2 /* TTBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTBaseNavigationController.m; sourceTree = "<group>"; };
+		1DB5A56B1D4B3EF1009E6170 /* TTFadeSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTFadeSwitch.h; sourceTree = "<group>"; };
+		1DB5A56C1D4B3EF1009E6170 /* TTFadeSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTFadeSwitch.m; sourceTree = "<group>"; };
+		1DB5A56D1D4B3EF1009E6170 /* TTSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSwitch.h; sourceTree = "<group>"; };
+		1DB5A56E1D4B3EF1009E6170 /* TTSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTSwitch.m; sourceTree = "<group>"; };
+		1DB5A56F1D4B3EF1009E6170 /* TTSwitchSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSwitchSubclass.h; sourceTree = "<group>"; };
+		1DB5A5741D4B3F36009E6170 /* switchGreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switchGreen@2x.png"; sourceTree = "<group>"; };
+		1DB5A5751D4B3F36009E6170 /* switchMask@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switchMask@2x.png"; sourceTree = "<group>"; };
+		1DB5A5761D4B3F36009E6170 /* switchRed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switchRed@2x.png"; sourceTree = "<group>"; };
+		1DB5A5771D4B3F36009E6170 /* switchToggle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switchToggle@2x.png"; sourceTree = "<group>"; };
+		1DB5A5781D4B3F36009E6170 /* switchToggleHigh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switchToggleHigh@2x.png"; sourceTree = "<group>"; };
+		1DB5A57A1D4B3F36009E6170 /* round-switch-mask@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "round-switch-mask@2x.png"; sourceTree = "<group>"; };
+		1DB5A57B1D4B3F36009E6170 /* round-switch-overlay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "round-switch-overlay@2x.png"; sourceTree = "<group>"; };
+		1DB5A57C1D4B3F36009E6170 /* round-switch-thumb-highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "round-switch-thumb-highlight@2x.png"; sourceTree = "<group>"; };
+		1DB5A57D1D4B3F36009E6170 /* round-switch-thumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "round-switch-thumb@2x.png"; sourceTree = "<group>"; };
+		1DB5A57E1D4B3F36009E6170 /* round-switch-track-no-text@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "round-switch-track-no-text@2x.png"; sourceTree = "<group>"; };
+		1DB5A57F1D4B3F36009E6170 /* round-switch-track@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "round-switch-track@2x.png"; sourceTree = "<group>"; };
+		1DB5A5811D4B3F36009E6170 /* square-switch-mask@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "square-switch-mask@2x.png"; sourceTree = "<group>"; };
+		1DB5A5821D4B3F36009E6170 /* square-switch-overlay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "square-switch-overlay@2x.png"; sourceTree = "<group>"; };
+		1DB5A5831D4B3F36009E6170 /* square-switch-thumb-highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "square-switch-thumb-highlight@2x.png"; sourceTree = "<group>"; };
+		1DB5A5841D4B3F36009E6170 /* square-switch-thumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "square-switch-thumb@2x.png"; sourceTree = "<group>"; };
+		1DB5A5851D4B3F36009E6170 /* square-switch-track@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "square-switch-track@2x.png"; sourceTree = "<group>"; };
 		1DB926131D46F4F4003676AC /* LCProcessFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCProcessFilter.h; sourceTree = "<group>"; };
 		1DB926141D46F4F4003676AC /* LCProcessFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCProcessFilter.m; sourceTree = "<group>"; };
 		1DB926151D46F4F4003676AC /* LCRequestAccessory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCRequestAccessory.h; sourceTree = "<group>"; };
@@ -1457,6 +1499,7 @@
 		1DA71B751D3DB618007483D2 /* Third */ = {
 			isa = PBXGroup;
 			children = (
+				1DB5A56A1D4B3EF1009E6170 /* TTSwitch */,
 				1DF991C21D488C0F00E7D1B8 /* TYLaunchAnimation */,
 				1D0EA2C91D45A8AD00B47108 /* TMCache */,
 				1D0EA2B11D45A82C00B47108 /* LCNetwork */,
@@ -1525,6 +1568,8 @@
 		1DA71B8B1D3DCB3A007483D2 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				1D115F2C1D4B9560003DFBB1 /* UITextView+PlaceHolder.h */,
+				1D115F2D1D4B9560003DFBB1 /* UITextView+PlaceHolder.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1538,6 +1583,66 @@
 				1DA71B911D3DCC9D007483D2 /* TTBaseNavigationController.m */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		1DB5A56A1D4B3EF1009E6170 /* TTSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				1DB5A5721D4B3F36009E6170 /* Images */,
+				1DB5A56B1D4B3EF1009E6170 /* TTFadeSwitch.h */,
+				1DB5A56C1D4B3EF1009E6170 /* TTFadeSwitch.m */,
+				1DB5A56D1D4B3EF1009E6170 /* TTSwitch.h */,
+				1DB5A56E1D4B3EF1009E6170 /* TTSwitch.m */,
+				1DB5A56F1D4B3EF1009E6170 /* TTSwitchSubclass.h */,
+			);
+			path = TTSwitch;
+			sourceTree = "<group>";
+		};
+		1DB5A5721D4B3F36009E6170 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1DB5A5731D4B3F36009E6170 /* Fade */,
+				1DB5A5791D4B3F36009E6170 /* Round */,
+				1DB5A5801D4B3F36009E6170 /* Square */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		1DB5A5731D4B3F36009E6170 /* Fade */ = {
+			isa = PBXGroup;
+			children = (
+				1DB5A5741D4B3F36009E6170 /* switchGreen@2x.png */,
+				1DB5A5751D4B3F36009E6170 /* switchMask@2x.png */,
+				1DB5A5761D4B3F36009E6170 /* switchRed@2x.png */,
+				1DB5A5771D4B3F36009E6170 /* switchToggle@2x.png */,
+				1DB5A5781D4B3F36009E6170 /* switchToggleHigh@2x.png */,
+			);
+			path = Fade;
+			sourceTree = "<group>";
+		};
+		1DB5A5791D4B3F36009E6170 /* Round */ = {
+			isa = PBXGroup;
+			children = (
+				1DB5A57A1D4B3F36009E6170 /* round-switch-mask@2x.png */,
+				1DB5A57B1D4B3F36009E6170 /* round-switch-overlay@2x.png */,
+				1DB5A57C1D4B3F36009E6170 /* round-switch-thumb-highlight@2x.png */,
+				1DB5A57D1D4B3F36009E6170 /* round-switch-thumb@2x.png */,
+				1DB5A57E1D4B3F36009E6170 /* round-switch-track-no-text@2x.png */,
+				1DB5A57F1D4B3F36009E6170 /* round-switch-track@2x.png */,
+			);
+			path = Round;
+			sourceTree = "<group>";
+		};
+		1DB5A5801D4B3F36009E6170 /* Square */ = {
+			isa = PBXGroup;
+			children = (
+				1DB5A5811D4B3F36009E6170 /* square-switch-mask@2x.png */,
+				1DB5A5821D4B3F36009E6170 /* square-switch-overlay@2x.png */,
+				1DB5A5831D4B3F36009E6170 /* square-switch-thumb-highlight@2x.png */,
+				1DB5A5841D4B3F36009E6170 /* square-switch-thumb@2x.png */,
+				1DB5A5851D4B3F36009E6170 /* square-switch-track@2x.png */,
+			);
+			path = Square;
 			sourceTree = "<group>";
 		};
 		1DB926121D46F4F4003676AC /* NetworkHelper */ = {
@@ -1644,11 +1749,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DB5A5881D4B3F36009E6170 /* switchRed@2x.png in Resources */,
+				1DB5A5901D4B3F36009E6170 /* round-switch-track@2x.png in Resources */,
 				1D55FD8F1D49A19900094112 /* TTSettingViewController.xib in Resources */,
 				1D9580D11D3E225200FD0053 /* Info.plist in Resources */,
+				1DB5A58D1D4B3F36009E6170 /* round-switch-thumb-highlight@2x.png in Resources */,
 				1DA71B841D3DBA67007483D2 /* Assets.xcassets in Resources */,
 				1DA71B821D3DBA67007483D2 /* LaunchScreen.storyboard in Resources */,
+				1DB5A5871D4B3F36009E6170 /* switchMask@2x.png in Resources */,
+				1DB5A58C1D4B3F36009E6170 /* round-switch-overlay@2x.png in Resources */,
 				1D55FD951D49AAA400094112 /* SettingCell.xib in Resources */,
+				1DB5A5941D4B3F36009E6170 /* square-switch-thumb@2x.png in Resources */,
+				1DB5A58F1D4B3F36009E6170 /* round-switch-track-no-text@2x.png in Resources */,
+				1DB5A5911D4B3F36009E6170 /* square-switch-mask@2x.png in Resources */,
+				1DB5A5861D4B3F36009E6170 /* switchGreen@2x.png in Resources */,
+				1DB5A58A1D4B3F36009E6170 /* switchToggleHigh@2x.png in Resources */,
+				1DB5A5951D4B3F36009E6170 /* square-switch-track@2x.png in Resources */,
+				1DB5A58E1D4B3F36009E6170 /* round-switch-thumb@2x.png in Resources */,
+				1DB5A5931D4B3F36009E6170 /* square-switch-thumb-highlight@2x.png in Resources */,
+				1DB5A5921D4B3F36009E6170 /* square-switch-overlay@2x.png in Resources */,
+				1DB5A58B1D4B3F36009E6170 /* round-switch-mask@2x.png in Resources */,
+				1DB5A5891D4B3F36009E6170 /* switchToggle@2x.png in Resources */,
 				1D9580B01D3E207200FD0053 /* MJRefresh.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1666,6 +1787,7 @@
 				1D09CD631D3F59D500F85E9A /* SDWebImagePrefetcher.m in Sources */,
 				1D09CD281D3F550300F85E9A /* UIActionSheet+HYBHelperKit.m in Sources */,
 				1D09CD161D3F550300F85E9A /* NSMutableDictionary+HYBHelperKit.m in Sources */,
+				1DB5A5701D4B3EF1009E6170 /* TTFadeSwitch.m in Sources */,
 				1D09CD271D3F550300F85E9A /* UIView+HYBHelperBlockKit.m in Sources */,
 				1D9580A71D3E207200FD0053 /* MJRefreshAutoGifFooter.m in Sources */,
 				1D9580AC1D3E207200FD0053 /* MJRefreshBackStateFooter.m in Sources */,
@@ -1718,6 +1840,7 @@
 				1DA71B921D3DCC9D007483D2 /* TTBaseNavigationController.m in Sources */,
 				1D95803B1D3E123800FD0053 /* AFURLSessionManager.m in Sources */,
 				1D09CD5D1D3F59D500F85E9A /* UIView+WebCacheOperation.m in Sources */,
+				1DB5A5711D4B3EF1009E6170 /* TTSwitch.m in Sources */,
 				1DB926181D46F4F4003676AC /* LCRequestAccessory.m in Sources */,
 				1D9580A61D3E207200FD0053 /* MJRefreshHeader.m in Sources */,
 				1D55FD941D49AAA400094112 /* SettingCell.m in Sources */,
@@ -1798,6 +1921,7 @@
 				1D09CC991D3F29C900F85E9A /* YYTextAttribute.m in Sources */,
 				1D09CC9E1D3F29C900F85E9A /* YYLabel.m in Sources */,
 				1D09CC5E1D3F29C900F85E9A /* NSDate+YYAdd.m in Sources */,
+				1D115F2E1D4B9560003DFBB1 /* UITextView+PlaceHolder.m in Sources */,
 				1D09CC8F1D3F29C900F85E9A /* YYTextInput.m in Sources */,
 				1DF991CC1D488C0F00E7D1B8 /* TYLaunchBaseAnimation.m in Sources */,
 				1D09CC8D1D3F29C900F85E9A /* YYTextDebugOption.m in Sources */,

@@ -22,6 +22,9 @@
     [self hyb_setNavLeftButtonTitle:@"返回" onCliked:^(UIButton *sender) {
         [self.navigationController popViewControllerAnimated:YES];
     }];
+    
+    self.contentTable.estimatedRowHeight = 77;
+    self.contentTable.rowHeight = UITableViewAutomaticDimension;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,11 +47,8 @@
     if (!cell) {
         cell = LoadFromNib(@"SettingCell");
     }
+    [cell reloadCell:self.datas[indexPath.section]];
     return cell;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 115;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
@@ -59,6 +59,19 @@
     UIView *headerView = [[UIView alloc] init];
     headerView.backgroundColor = [UIColor clearColor];
     return headerView;
+}
+
+#pragma -mark UITextView Delegate
+#pragma -mark getters
+- (NSMutableArray *)datas {
+    if (!_datas) {
+        _datas = [NSMutableArray arrayWithObjects:
+  @{@"NAME":@"fsfdfdfdfdfdfdfdfd",@"TITLE":@"名称",@"TYPE":@"0"},
+  @{@"NAME":@"ffgfgfgfgfgfgfggf大大大大大大大大大大大大",@"TITLE":@"描述",@"TYPE":@"1"},
+  @{@"NAME":@"飞凤飞飞如果认购人跟人沟通",@"TITLE":@"私有",@"TYPE":@"2"},
+  @{@"NAME":@"个体户头昏眼花与银行业和银行业和银行业测试",@"TITLE":@"添加成员",@"TYPE":@"3"},nil];
+    }
+    return _datas;
 }
 
 @end
