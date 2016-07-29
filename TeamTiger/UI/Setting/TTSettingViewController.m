@@ -8,6 +8,7 @@
 
 #import "TTSettingViewController.h"
 #import "SettingCell.h"
+#import "IQKeyboardManager.h"
 @interface TTSettingViewController ()
 
 @end
@@ -22,6 +23,8 @@
     [self hyb_setNavLeftButtonTitle:@"返回" onCliked:^(UIButton *sender) {
         [self.navigationController popViewControllerAnimated:YES];
     }];
+    
+    [IQKeyboardManager sharedManager].shouldResignOnTouchOutside = YES;
     
     self.contentTable.estimatedRowHeight = 77;
     self.contentTable.rowHeight = UITableViewAutomaticDimension;

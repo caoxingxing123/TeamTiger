@@ -12,6 +12,7 @@
 #import "UIView+TYLaunchAnimation.h"
 #import "TYLaunchFadeScaleAnimation.h"
 #import "TTBaseNavigationController.h"
+#import "IQKeyboardManager.h"
 
 @interface AppDelegate ()
 
@@ -66,6 +67,10 @@
     //DataBase
     [SQLITEMANAGER setDataBasePath:SYSTEM];
     [SQLITEMANAGER createDataBaseIsNeedUpdate:YES isForUser:NO];
+    
+    //IQKeyboardManager
+    [IQKeyboardManager sharedManager].enable = YES;
+    [IQKeyboardManager sharedManager].enableAutoToolbar = NO;
 }
 
 @end

@@ -14,17 +14,6 @@
 
 @implementation SettingCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
-}
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
-}
-
 - (void)reloadCell:(id)obj {
     NSDictionary *dic = [NSDictionary dictionaryWithDictionary:obj];
     self.titleLab.text = dic[@"TITLE"];
@@ -41,6 +30,7 @@
             self.textField.tintColor = [UIColor whiteColor];
             [self.textField setValue:[UIColor lightTextColor] forKeyPath:@"_placeholderLabel.textColor"];
             self.textField.font = [UIFont systemFontOfSize:15];
+            self.textField.delegate = self;
             break;
         }
         case ECellTypeTextView:{
@@ -67,6 +57,7 @@
             }];
             
             self.textView.placeholder = @"请输入描述";
+            self.textView.maxLength = 200;//最大字数
             break;
         }
 
@@ -124,16 +115,13 @@
 
 
 - (void)textViewDidChange:(UITextView *)textView {
-    CGRect bounds = textView.bounds;
-    // 计算 text view 的高度
-    CGSize maxSize = CGSizeMake(bounds.size.width, CGFLOAT_MAX);
-    CGSize newSize = [textView sizeThatFits:maxSize];
-    bounds.size = newSize;
-    textView.bounds = bounds;
-    // 让 table view 重新计算高度
     UITableView *tableView = [self tableView];
+    CGPoint currentOffset = tableView.contentOffset;
+    [UIView setAnimationsEnabled:NO];
     [tableView beginUpdates];
     [tableView endUpdates];
+    [UIView setAnimationsEnabled:YES];
+    [tableView setContentOffset:currentOffset animated:NO];
 }
 
 - (UITableView *)tableView {
@@ -144,5 +132,22 @@
     return (UITableView *)tableView;
 }
 
+
+- (void)textViewDidEndEditing:(UITextView *)textView {
+    if (self.actionBlock) {
+        self.actionBlock(self,ECellTypeTextField,textView.text);
+    }
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField{
+    if (self.actionBlock) {
+        self.actionBlock(self,ECellTypeTextField,textField.text);
+    }
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
+}
 
 @end
