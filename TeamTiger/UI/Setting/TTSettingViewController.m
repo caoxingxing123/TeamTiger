@@ -51,6 +51,28 @@
         cell = LoadFromNib(@"SettingCell");
     }
     [cell reloadCell:self.datas[indexPath.section]];
+    cell.actionBlock = ^(SettingCell *settingCell, ECellType type, id obj){
+        switch (type) {
+            case ECellTypeTextField:{
+                
+                break;
+            }
+            case ECellTypeTextView:{
+                
+                break;
+            }
+            case ECellTypeSwitch:{
+                
+                break;
+            }
+            case ECellTypeAccessory:{
+                
+                break;
+            }
+            default:
+                break;
+        }
+    };
     return cell;
 }
 

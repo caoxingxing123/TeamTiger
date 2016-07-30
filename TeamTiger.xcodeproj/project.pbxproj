@@ -173,6 +173,8 @@
 		1D115F921D4BA043003DFBB1 /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D115F811D4BA043003DFBB1 /* IQToolbar.m */; };
 		1D115F931D4BA043003DFBB1 /* IQUIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D115F831D4BA043003DFBB1 /* IQUIView+IQKeyboardToolbar.m */; };
 		1D115F941D4BA043003DFBB1 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1D115F851D4BA043003DFBB1 /* IQKeyboardManager.bundle */; };
+		1D2E1AAB1D4C538B00C0CE0A /* TTAddContactorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2E1AA91D4C538B00C0CE0A /* TTAddContactorViewController.m */; };
+		1D2E1AAC1D4C538B00C0CE0A /* TTAddContactorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D2E1AAA1D4C538B00C0CE0A /* TTAddContactorViewController.xib */; };
 		1D55FD8F1D49A19900094112 /* TTSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D55FD8E1D49A19900094112 /* TTSettingViewController.xib */; };
 		1D55FD941D49AAA400094112 /* SettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D55FD921D49AAA400094112 /* SettingCell.m */; };
 		1D55FD951D49AAA400094112 /* SettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D55FD931D49AAA400094112 /* SettingCell.xib */; };
@@ -589,6 +591,9 @@
 		1D115F821D4BA043003DFBB1 /* IQUIView+IQKeyboardToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIView+IQKeyboardToolbar.h"; sourceTree = "<group>"; };
 		1D115F831D4BA043003DFBB1 /* IQUIView+IQKeyboardToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIView+IQKeyboardToolbar.m"; sourceTree = "<group>"; };
 		1D115F851D4BA043003DFBB1 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		1D2E1AA81D4C538B00C0CE0A /* TTAddContactorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAddContactorViewController.h; sourceTree = "<group>"; };
+		1D2E1AA91D4C538B00C0CE0A /* TTAddContactorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAddContactorViewController.m; sourceTree = "<group>"; };
+		1D2E1AAA1D4C538B00C0CE0A /* TTAddContactorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTAddContactorViewController.xib; sourceTree = "<group>"; };
 		1D55FD8E1D49A19900094112 /* TTSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTSettingViewController.xib; sourceTree = "<group>"; };
 		1D55FD911D49AAA400094112 /* SettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingCell.h; sourceTree = "<group>"; };
 		1D55FD921D49AAA400094112 /* SettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingCell.m; sourceTree = "<group>"; };
@@ -1345,6 +1350,16 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		1D2E1AA71D4C530500C0CE0A /* AddContactor */ = {
+			isa = PBXGroup;
+			children = (
+				1D2E1AA81D4C538B00C0CE0A /* TTAddContactorViewController.h */,
+				1D2E1AA91D4C538B00C0CE0A /* TTAddContactorViewController.m */,
+				1D2E1AAA1D4C538B00C0CE0A /* TTAddContactorViewController.xib */,
+			);
+			path = AddContactor;
+			sourceTree = "<group>";
+		};
 		1D55FD901D49AA8200094112 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -1809,6 +1824,7 @@
 		1DF991D41D48ADB300E7D1B8 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				1D2E1AA71D4C530500C0CE0A /* AddContactor */,
 				1D55FD901D49AA8200094112 /* View */,
 				1DF991D51D48ADD900E7D1B8 /* TTSettingViewController.h */,
 				1DF991D61D48ADD900E7D1B8 /* TTSettingViewController.m */,
@@ -1848,6 +1864,7 @@
 				TargetAttributes = {
 					1DA71B591D3DB5A1007483D2 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = FAT69R69RF;
 					};
 				};
 			};
@@ -1878,6 +1895,7 @@
 				1DB5A5881D4B3F36009E6170 /* switchRed@2x.png in Resources */,
 				1DB5A5901D4B3F36009E6170 /* round-switch-track@2x.png in Resources */,
 				1D55FD8F1D49A19900094112 /* TTSettingViewController.xib in Resources */,
+				1D2E1AAC1D4C538B00C0CE0A /* TTAddContactorViewController.xib in Resources */,
 				1D9580D11D3E225200FD0053 /* Info.plist in Resources */,
 				1DB5A58D1D4B3F36009E6170 /* round-switch-thumb-highlight@2x.png in Resources */,
 				1DA71B841D3DBA67007483D2 /* Assets.xcassets in Resources */,
@@ -2109,6 +2127,7 @@
 				1D115F861D4BA043003DFBB1 /* IQNSArray+Sort.m in Sources */,
 				1D9580AE1D3E207200FD0053 /* MJRefreshNormalHeader.m in Sources */,
 				1D09CD1B1D3F550300F85E9A /* NSUserDefaults+HYBHelperKit.m in Sources */,
+				1D2E1AAB1D4C538B00C0CE0A /* TTAddContactorViewController.m in Sources */,
 				1D09CC621D3F29C900F85E9A /* NSNumber+YYAdd.m in Sources */,
 				1D09CC6B1D3F29C900F85E9A /* UIApplication+YYAdd.m in Sources */,
 				1DF991D71D48ADD900E7D1B8 /* TTSettingViewController.m in Sources */,
@@ -2222,13 +2241,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TeamTiger/Resource/TeamTiger-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/TeamTiger/Resource/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sgcc.teamTiger.TeamTiger;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dream.teamTiger.TeamTiger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -2237,13 +2259,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TeamTiger/Resource/TeamTiger-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/TeamTiger/Resource/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sgcc.teamTiger.TeamTiger;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dream.teamTiger.TeamTiger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
